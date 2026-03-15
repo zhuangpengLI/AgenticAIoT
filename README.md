@@ -1,23 +1,27 @@
+# AgenticAIoT - 自进化智能物联网平台
+
 <p align="center">
  <img src="https://img.shields.io/badge/Spring%20Boot-3.4.5-blue.svg" alt="Spring Boot">
  <img src="https://img.shields.io/badge/Vue-3.2-blue.svg" alt="Vue">
  <img src="https://img.shields.io/badge/Spring%20AI-1.1.2-green.svg" alt="Spring AI">
  <img src="https://img.shields.io/badge/IoT%20Protocols-13+-orange.svg" alt="IoT Protocols">
+ <img src="https://img.shields.io/badge/Qoder-AI%20Coding-red.svg" alt="Qoder AI">
 </p>
 
 ## 平台简介
 
-**自进化 AIoT 平台**是一个融合 **AI 大模型**与**物联网（IoT）** 的企业级智能物联网平台。平台以"设备接入 + 数据流转 + 规则引擎 + AI 智能"为核心，实现设备全生命周期管理、多协议自主接入与扩展、智能规则联动与告警、AI 辅助运维与决策，打造**可感知、可分析、可决策、可自进化**的新一代 AIoT 解决方案。
+**AgenticAIoT** 是一款**企业级自进化智能物联网平台**，深度融合 **AI 大模型**、**物联网（IoT）** 与 **AI 自主编程** 三大核心能力。平台以"智能设备接入 + 数据智能流转 + 规则引擎联动 + AI 决策运维 + 自主进化"为核心理念，提供设备全生命周期管理、多协议自主接入、智能规则引擎、AI 辅助运维决策、Qoder 自主编码等核心能力，打造**可感知、可分析、可决策、可进化、可自主开发**的新一代 AIoT 智能解决方案。
 
 ### 技术架构
 
-* Java 后端：JDK 17/21 + Spring Boot 3.x + Spring AI 1.1.2
-* 管理后台：Vue3（element-plus / vben）+ uni-app 移动端
-* 数据存储：MySQL / PostgreSQL / 达梦 + TDEngine（时序数据）+ Redis + 向量数据库（Qdrant / Milvus）
-* 消息总线：支持 Local Event、Redis Stream、RocketMQ、Kafka、RabbitMQ
-* IoT 网关：基于 Vert.x 高性能异步框架 + Californium（CoAP）+ j2mod（Modbus）
-* 权限认证：Spring Security + Token + Redis，支持 SaaS 多租户、SSO 单点登录
-* 工作流引擎：Flowable（仿钉钉 / 飞书 + BPMN 双设计器）
+* **后端框架**：JDK 17/21 + Spring Boot 3.x + Spring AI 1.1.2
+* **前端框架**：Vue3（Element Plus / Vben）+ uni-app 移动端
+* **数据存储**：MySQL / PostgreSQL / 达梦 + TDEngine（时序数据）+ Redis + 向量数据库（Qdrant / Milvus）
+* **消息总线**：支持 Local Event、Redis Stream、RocketMQ、Kafka、RabbitMQ
+* **IoT 网关**：基于 Vert.x 高性能异步框架 + Californium（CoAP）+ j2mod（Modbus）
+* **权限认证**：Spring Security + Token + Redis，支持 SaaS 多租户、SSO 单点登录
+* **工作流引擎**：Flowable（仿钉钉 / 飞书 + BPMN 双设计器）
+* **AI 编程**：Qoder 自主编码助手 + Specs/Plans 规范化开发
 
 ### Qoder 自主编码
 
@@ -31,6 +35,50 @@
 | 规则引擎配置 | 自然语言描述业务场景，自动生成场景联动规则和告警配置 |
 | 代码审查与优化 | AI 自动审查代码质量，提供优化建议和安全漏洞检测 |
 | 文档自动生成 | 自动生成 API 文档、数据库设计文档、协议说明文档 |
+
+### 基于 Specs/Plans 的规范化 AI 编程
+
+平台创新性地引入**规范化 AI 编程工作流**，通过 `.qoder` 目录下的规范文件实现高质量自主编码：
+
+| 文件类型 | 路径 | 作用 |
+|---------|------|------|
+| **Specs（规范）** | `.qoder/specs/` | 定义编码规范、技术标准、架构约束、代码风格 |
+| **Plans（计划）** | `.qoder/plans/` | 定义任务分解、实施步骤、验收标准、交付物清单 |
+| **Agents（代理）** | `.qoder/agents/` | 定义 AI 代理角色、职责边界、协作流程 |
+| **Skills（技能）** | `.qoder/skills/` | 定义可复用技能、代码模板、最佳实践 |
+
+#### 标准化 AI 编程流程
+
+1. **需求对齐阶段**
+   - AI 自动读取 Specs 规范，理解技术栈、编码标准、架构模式
+   - AI 解析 Plans 计划，明确需求范围、功能边界、验收标准
+   - 生成实施方案，与用户确认后再执行
+
+2. **方案设计阶段**
+   - AI 根据规范自动设计技术方案（类图、流程图、数据模型）
+   - 生成详细的实施计划（任务分解、依赖关系、优先级）
+   - 输出验收标准（功能测试、性能指标、代码质量要求）
+
+3. **自主编码阶段**
+   - **无手写代码**：AI 根据方案自主生成完整代码
+   - **纯 AI 编程**：从业务逻辑到单元测试，全部由 AI 生成
+   - **规范遵循**：自动遵循 Specs 定义的编码规范和架构约束
+   - **质量保障**：自动生成单元测试、集成测试、性能测试
+
+4. **验收交付阶段**
+   - AI 自动执行测试用例，验证功能是否符合 Plans 中的验收标准
+   - 生成验收报告（测试覆盖率、性能指标、代码质量评分）
+   - 输出完整文档（API 文档、使用说明、部署指南）
+
+#### 核心优势
+
+| 优势 | 说明 |
+|------|------|
+| 🎯 **需求精准对齐** | 通过 Specs/Plans 确保 AI 理解无偏差，避免"AI 乱写代码" |
+| 📋 **方案先行** | 先设计方案和验收标准，经用户确认后再编码，降低返工风险 |
+| 🤖 **纯 AI 自主编程** | 从需求到代码全流程 AI 化，无需手写代码，提升开发效率 10x+ |
+| ✅ **质量可保障** | 自动测试 + 规范约束 + 验收标准，确保代码质量可控 |
+| 🔄 **持续自进化** | 根据项目反馈自动优化 Specs/Plans，形成正向循环 |
 
 ---
 
