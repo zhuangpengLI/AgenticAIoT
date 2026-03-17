@@ -12,6 +12,12 @@
 
 **AgenticAIoT** 是一款**企业级自进化智能物联网平台**，深度融合 **AI 大模型**、**物联网（IoT）** 与 **AI 自主编程** 三大核心能力。平台以"智能设备接入 + 数据智能流转 + 规则引擎联动 + AI 决策运维 + 自主进化"为核心理念，提供设备全生命周期管理、多协议自主接入、智能规则引擎、AI 辅助运维决策、Qoder 自主编码等核心能力，打造**可感知、可分析、可决策、可进化、可自主开发**的新一代 AIoT 智能解决方案。
 
+> gitee: [AgenticAIoT](https://gitee.com/zhuangpengli/AgenticAIoT.git)
+
+> gitcode: [AgenticAIoT](https://gitcode.com/lizhuangpeng/AgenticAIoT)
+
+> github: [AgenticAIoT](https://github.com/zhuangpengLI/AgenticAIoT)
+
 ### 技术架构
 
 * **后端框架**：JDK 17/21 + Spring Boot 3.x + Spring AI 1.1.2
